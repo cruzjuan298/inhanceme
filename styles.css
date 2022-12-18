@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+    font-family: cursive;
+    font-size: 12px;
+    background-image: url(https://img.freepik.com/premium-vector/soft-pink-abstract-watercolor-background_3590-175.jpg?w=2000);
+      background-attachment: fixed;
+    color: rgb(116, 116, 116);
+    font-weight: 600;
+    }
+    header{
+        width: 100%;
+        height: 50px ;
+        background-color: rgb(255, 255, 255);
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        align-items: center;
+        top: 0;
+        min-height: 4rem;
+      }
+      #newimg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 90px;
+      }
+      nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 100px;
+      }
+      #nav-bar li{
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 600;
+        margin-right: 40px;
+    }
+    #nav-bar a {
+        text-decoration: none;
+        margin: 0;
+        padding: 10px 10px;
+        list-style-type: none;
+        color: #B18687;
+        text-align: center;
+        height: 50px;
+     }
+     #header-img{
+        margin-top: 10px;
+        margin-right: 900px;
+        margin-left: 90px;
+    }
+    .video{
+      padding: 100px;
+    }
+    #moodtext{
+        font-size: 17px;
+    }
+    footer{
+      text-align: center;
+      font-size: 15px;
+      padding: 25px;
+    }
+    .sections-survey, .sections-about, .sections-hotlines{
+        margin: 100px;
+        font-family: cursive;
+        font-size: 20px;
+    }

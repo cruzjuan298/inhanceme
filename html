@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Inhance</title>
+                <link rel="stylesheet" href="styles.css" />
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+        </head>
+            <body>
+                <div class="header">
+                    <header id="header">
+                         <nav id="nav-bar">
+                            <img id="header-img" src="https://lh3.googleusercontent.com/tNuP-dwWAkiAmiMi1nWEeoQ9B95fcLsGl-JjWjPpaqWSmo6ignkKh0U21qhFnH85GT9BgszuZp7wlNKdFp8cjHFgLDUp_EXoKRaqCGHw5T0ukbnP-lG5H2IqgiKTA08ncbvXVe90ceC11lsYMusJGDEiQObCb_ENVR_0ecRVLSIpUOFTq9zCW62P4ewp2HXdt_pA1b4y0_7uu13APF_JUJxOriMZqUSojPx83lGD5aOkBGl52ims2mlIN035Ae-epGmKwTTGXR2X-sVv84zOgL3DGOmGKwi5B9LmSlTFnSkmsiXYO2-kgVnbNY_7sow5EKzrm4iAHqV7NNPQn9nwSypg_sYfQcVNRf_KRIJUE4NbVEJjGx7w8P2H7MtcWirFccWs0qpO8PKhjjFWCOFbjEvR7IHn5VQawswIjJ-M1OHQy4rPfAQwVY7zW1LBxYYqhu-PZZ1U3IW9K8-inX47d4uuU5gWrES-o3x0SsP-jGpKbDxeRDxNWcJDkfwSEf_R4H12p3mrGAZ9D97ieFq1UJ-ehR6LBn9cGXt7IypaTTlSFfeH40qmMwsqOavuRqTwGjB-ZIj2AbQG7w7MRH0g2_S8rLTio2Yb1fRjfMh3wk3WVzs0ecAM-Hz67QZmDktq6ZztfnMKbJvboqdLK6EC7_DNKEioYOZKiFn4s8hGm43xUv-db8Dnm03pDdLFdyzQgr9X4DTS9Jh0ZP5lqLPRDwLwJMt0a54xZl6QETVQY2Byx_O1CD5cuNOeVYYNZswTABD4KGDhG3MdUcXmtAKsd1zOT4LdfYMcYhvUYPoQBXswANRqEvL2Uz9v8iO0phsC3saFNXQUyna9f5PCOMxEPpsN6XmGFMvKttLgpTsrydPJiOcCW-YeJTxVHkrBReVFwh_5MjtsgX3GfLQFjvfGpEv70bD501xUH1eNec5pF7nW6AhotiuXaGS1yiwathFYBdIVpSEGmIGFlaH7buc=s895-no?authuser=0" style="height: 140px; width: 140px;" />
+                          <ul>
+                          <li><a class="nav-link" href="#About">About</a></li>
+                          <li><a class="nav-link" href="#Guide">Guide</a></li>
+                          <li><a class="nav-link" href="#Hotlines">Hotlines</a></li>
+                          </ul>
+                          </nav>
+                         </header>
+                </div>
+                <div>
+                    <img id="newimg" width="430" src="https://i.pinimg.com/736x/65/d1/fc/65d1fcadd73bd637b1603eb011db21b0.jpg" />
+                </div>
+                <div>
+                    <section class="sections-about" id="About">
+                        <h1 id="titlea">Why Care?</h1>
+                        <article>
+                            <p>For many years, humans have used music as an outlet to express their feelings. The music in ancient times differs from the rap clinicals we hear today
+                                 The music today enlightens emotions that could either be negative or postive. In many ways, the music we listen to shapes the character that we are. 
+                                However, not many know the history behind the frequcnies present in music. It has a significant role in the way we interact and our emotions when listening to these types of musics</p>
+                                <source class="video">
+                                    <iframe id="video" width="430" height="330" src="https://www.youtube.com/embed/w2x2JrHYQu4"></iframe>
+                                </source>
+                            <p>Among the many frequcnies avilable, the one that is most commonly used in music is 440hz. The 440hz vs 432hz debate stems from people calling out the harmful effects of 440hz on human emotions. 
+                                When compared together, there is a noticeable difference between music played at these two different frequcnies. 
+                                It may take some time for studies to further support the effects of 432hz music on the human brain beforee it is implimented, but there is no doubt that there is a commmuity ready to defend their claims.   </p>
+                            </article>
+                    </section>
+                    </div>
+                    <div>
+                        <section class="sections-survey" id="Guide">
+                        <h1 id-="titlea">Find out what to feed your soul...<h1>
+                        <form id="survey-form">
+                            <p id="moodtext">What emoition are you feeling right now?</p>
+                            <input type="radio" name="mood" value="sad"> Sad<br>
+                            <input type="radio" name="mood" value="mad"> Mad<br>
+                            <input type="radio" name="mood" value="enpowered"> Enpowered<br>
+                            <input type="radio" name="mood" value="fear"> Fear<br>
+                          </form>
+                          
+                          <div id="video-container"></div>
+                          
+                            // Get the survey form and video container elements
+                            const surveyForm = document.getElementById('survey-form');
+                            const videoContainer = document.getElementById('video-container');
+                          
+                            // Listen for a change in the form's input fields
+                            surveyForm.addEventListener('change', (event) => {
+                              // Users answer is taken
+                              const selectedAnswer = event.target.value;
+                          
+                              // Displays the correct video based on the persons answer
+                              if (selectedAnswer === 'sad') {
+                                videoContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/1Dk04sX-qCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                              } else if (selectedAnswer === 'mad') {
+                                videoContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/npCwIUiJS4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                              } else if (selectedAnswer === 'enpowered') {
+                                videoContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/yiGweP--BRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                              } else if (selectedAnswer === 'fear') {
+                                videoContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/LU_lEl-n5Ec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                              }
+                            });
+                        </section>
+                </div>
+                <div>
+                    <section class="sections-hotlines" id="Hotlines">
+                    <h1 id="titlea">Hotlines</h1>
+                    <p>If you are ever in need of any of these hotlines, you matter and please reach out<br>
+                        <p>National Domestic Violence Hotline:
+                        (800) 799-7233</br>
+                        <p>National Grad Crisis Line:
+                        (877) 472-3457<br>
+                        <p>National Sexual Assault Hotline:
+                        (800) 656-4673<br>
+
+                        <p>National Suicide and Crisis Lifeline:
+                        988<br>
+                    </section>
+                </div>
+                <footer id="footerr">
+                    <p>Made by: Juan Cruz-Flores</p>
+                </footer>
+            </body>
+    </html>
